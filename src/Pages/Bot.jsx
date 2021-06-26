@@ -29,7 +29,7 @@ class Bot extends Component {
     }
     render() {
         return (<>
-            <iframe src={this.state.url} scrolling="yes" border='0' style={{ border: "0px", margin: "0px", height: "100vh", overflow: "hidden" }} width="100%"></iframe>
+            <iframe title="bot" src={this.state.url} scrolling="yes" border='0' style={{ border: "0px", margin: "0px", height: "100vh", overflow: "hidden" }} width="100%"></iframe>
         </>
         );
     }
