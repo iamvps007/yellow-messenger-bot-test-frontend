@@ -28,8 +28,9 @@ class Bot extends Component {
         document.body.appendChild(script);
     }
     render() {
+        const id =  this.state.id
         return (<>
-            <div style={{backgroundImage:url({id}),backgroundRepeat: "no-repeat",backgroundSize: "100% 100vh;"}}></div>
+            <div style={{backgroundImage:`url(${id})`,backgroundRepeat: "no-repeat",backgroundSize: "100% 100vh;"}}></div>
         </>
         );
     }
