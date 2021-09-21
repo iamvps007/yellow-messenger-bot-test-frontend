@@ -23,7 +23,7 @@ class Bot extends Component {
         })
         document.title = `YM Bot ${id}`
         const script = document.createElement("script");
-        script.innerHTML = `window.ymConfig = { bot: '${id}', host: 'https://app.yellow.ai' };  (function () {var w=window,ic=w.YellowMessenger;if("function"===typeof ic)ic("reattach_activator"),ic("update",ymConfig);else{var d=document,i=function(){i.c(arguments)};function l(){var e=d.createElement("script");e.type="text/javascript",e.async=!0,e.src="https://app.yellowmessenger.com/widget/main.js";var t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)}i.q=[],i.c=function(e){i.q.push(e)},w.YellowMessenger=i,w.attachEvent?w.attachEvent("onload",l):w.addEventListener("load",l,!1)}})();`
+        script.innerHTML = `window.ymConfig = { bot: '${id}', host: 'https://app.yellow.ai', view: 'compact' };  (function () {var w=window,ic=w.YellowMessenger;if("function"===typeof ic)ic("reattach_activator"),ic("update",ymConfig);else{var d=document,i=function(){i.c(arguments)};function l(){var e=d.createElement("script");e.type="text/javascript",e.async=!0,e.src="https://cdn.yellowmessenger.com/plugin/widget-v2/latest/dist/main.min.js";var t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)}i.q=[],i.c=function(e){i.q.push(e)},w.YellowMessenger=i,w.attachEvent?w.attachEvent("onload",l):w.addEventListener("load",l,!1)}})();`
         script.async = true;
         document.body.appendChild(script);
     }
@@ -35,4 +35,4 @@ class Bot extends Component {
     }
 }
 
-export default withRouter(Bot);;
+export default withRouter(Bot);
