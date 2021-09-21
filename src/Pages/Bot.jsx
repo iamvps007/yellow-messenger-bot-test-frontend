@@ -30,7 +30,7 @@ class Bot extends Component {
     render() {
         const url =  this.state.url
         return (<>
-            <div style={{backgroundImage:`url(${url})`,backgroundRepeat: "no-repeat",backgroundSize: "100% 100vh;"}}></div>
+                <img src={url} width="100%" height="100%"/>
         </>
         );
     }
