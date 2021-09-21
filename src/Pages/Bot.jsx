@@ -29,7 +29,7 @@ class Bot extends Component {
     }
     render() {
         return (<>
-            <div style="background-image:url(http://d279m997dpfwgl.cloudfront.net/wp/2012/07/0703_koch-industires.jpg);background-repeat: no-repeat;background-size: 100% 100vh;"></div>
+            <div style={{backgroundImage:url({id}),backgroundRepeat: "no-repeat",backgroundSize: "100% 100vh;"}}></div>
         </>
         );
     }
