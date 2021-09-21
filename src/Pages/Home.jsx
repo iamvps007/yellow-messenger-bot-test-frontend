@@ -62,7 +62,7 @@ class Home extends Component {
                 <img src="https://yellow.ai/images/Logo.svg" alt="yellow.ai" />
                 <p>BOT TESTING</p>
                 <input style={{ borderRadius: "6px", border: "1px solid rgb(146 146 146)", backgroundColor: "", color: "grey", fontSize: "15px", width: "90%", padding: "6px" }} placeholder="Bot ID" type="text" name="botId" onChange={this.handleChange} />
-                <input style={{ marginTop: "20px", borderRadius: "6px", border: "1px solid rgb(146 146 146)", backgroundColor: "", fontSize: "15px", width: "90%", padding: "6px" }} placeholder="Website URL" type="text" name="url" onChange={this.handleChange} />
+                <input style={{ marginTop: "20px", borderRadius: "6px", border: "1px solid rgb(146 146 146)", backgroundColor: "", fontSize: "15px", width: "90%", padding: "6px" }} placeholder="Image URL" type="text" name="url" onChange={this.handleChange} />
                 {this.state.error && <small style={{ color: "red", textAlign: "left" }}>{this.state.error}</small>}
                 <br />
                 <button disabled={this.state.dissable} onClick={() => this.handEvent()} style={{ width: "100%", backgroundColor: "yellow", border: "none", padding: "8px", borderRadius: "6px", marginTop: "20px" }}>{this.state.buttonMsg}</button>
