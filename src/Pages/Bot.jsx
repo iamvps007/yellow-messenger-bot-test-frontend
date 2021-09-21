@@ -19,7 +19,7 @@ class Bot extends Component {
         console.log(url)
         url = decodeURIComponent(escape(window.atob(url)))
         this.setState({
-            url
+            url,id
         })
         document.title = `YM Bot ${id}`
         const script = document.createElement("script");
@@ -30,7 +30,7 @@ class Bot extends Component {
     render() {
         const id =  this.state.id
         return (<>
-            <div style={{backgroundImage:`url(${id})`,backgroundRepeat: "no-repeat",backgroundSize: "100% 100vh;"}}></div>
+            <div style={{backgroundImage:`url(${url})`,backgroundRepeat: "no-repeat",backgroundSize: "100% 100vh;"}}></div>
         </>
         );
     }
