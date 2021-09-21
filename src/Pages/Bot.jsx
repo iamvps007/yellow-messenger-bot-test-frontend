@@ -29,7 +29,7 @@ class Bot extends Component {
     }
     render() {
         return (<>
-            <iframe is="x-frame-bypass" title="bot" src={this.state.url} scrolling="yes" border='0' style={{ border: "0px", margin: "0px", height: "100vh", overflow: "hidden" }} width="100%"></iframe>
+            <div style="background-image:url(http://d279m997dpfwgl.cloudfront.net/wp/2012/07/0703_koch-industires.jpg);background-repeat: no-repeat;background-size: 100% 100vh;"></div>
         </>
         );
     }
